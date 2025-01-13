@@ -1,0 +1,26 @@
+.scrolling-banner {
+    background-color: #333; /* צבע רקע של הפס */
+    color: white; /* צבע הטקסט */
+    height: 50px; /* גובה הפס */
+    display: flex;
+    align-items: center; /* יישור הטקסט אנכית */
+    overflow: hidden; /* מסתיר טקסט שמחוץ למסגרת */
+    position: relative;
+}
+
+.sliding-text {
+    white-space: nowrap; /* מונע שבירת שורות */
+    display: inline-block;
+    animation: slide-left 10s linear infinite; /* אנימציה שחוזרת בלולאה */
+    position: absolute;
+    will-change: transform; /* משפר ביצועים */
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(420%); /* מתחיל מחוץ למסך מצד ימין */
+    }
+    100% {
+        transform: translateX(-100%); /* יוצא לחלוטין מצד שמאל */
+    }
+}

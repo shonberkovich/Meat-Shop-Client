@@ -120,7 +120,7 @@ function Shop() {
     }
     return (
         <div style={{display: 'flex', flexDirection: 'row', height: '100vh'}}>
-            <div style={{flex: '1'}}> {/* תוכן החנות */}
+            <div style={{flex: '1'}}>
                 <div className="container mt-4" style={{backgroundColor: 'transparent'}}>
                     <div className="d-flex justify-content-center align-items-center mb-4">
                         <input

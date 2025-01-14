@@ -38,12 +38,12 @@ function ProductForm({ name,productImgUrl,type, price, quantity, changeCostAndCo
                             quantity,
                         };
                         if (updatedProduct.quantity !== p.quantity) {
-                            saveChosenProduct(updatedProduct); // שליחה לשרת
+                            saveChosenProduct(updatedProduct);
                             Swal.fire({
                                 title: "Product Updated!",
                                 text: `${name} has been updated in your cart.`,
                                 icon: "info",
-                                timer: 2000,
+                                timer: 1000,
                                 showConfirmButton: false,
                             });
 
@@ -64,7 +64,7 @@ function ProductForm({ name,productImgUrl,type, price, quantity, changeCostAndCo
                     title: "Product Added!",
                     text: `${name} has been added to your cart.`,
                     icon: "success",
-                    timer: 2000,
+                    timer: 1000,
                     showConfirmButton: false,
                 });
                 saveChosenProduct(newProduct);
